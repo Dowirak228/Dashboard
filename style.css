@@ -1,0 +1,83 @@
+
+.container {
+   display: grid;
+   grid-template: 
+   "sidebar header"
+   "sidebar main";
+}
+
+.sidebar {
+   grid-area: sidebar;
+   background-color: rgb(42, 154, 245);
+}
+
+.sidebar_title {
+   position: relative;
+   padding-top: 10px;
+   margin-bottom: 34px;
+}
+
+.sidebar_title svg {
+   position: absolute;
+   top: 13px;
+   left: 8px;
+   color: #fff;
+}
+
+.sidebar_title .title {
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: #fff;
+   padding-left: 48px;
+}
+
+
+ul {
+   list-style-type: none;
+}
+
+.sidebar_list {
+
+}
+
+.sidebar_list a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.sidebar_list li {
+   position: relative;
+   margin-bottom: 16px;
+   font-weight: 600;
+   padding-left: 8px;
+}
+
+.sidebar_list li:nth-child(6) {
+   margin-bottom: 48px;
+}
+
+.sidebar_list svg {
+   color: #fff;
+   position: absolute;
+   top: 0px;
+   left: -25px;
+}
+
+
+
+
+
+
+
+.header {
+   grid-area: header;
+   background-color: red;
+}
+.main {
+   grid-area: main;
+   background-color: yellow;
+}
+
+
+
+
