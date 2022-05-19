@@ -73,22 +73,21 @@ ul {
 
 .header {
    grid-area: header;
-   background-color: red;
+   background-color: #fff;
    display: grid;
    grid-template: 1fr 1fr / 1fr;
-   margin-top: -42px;
+   gap: 30px;
 }
 
 .top_header {
    display: grid;
-   grid-template-columns: auto auto;
+   grid-template-columns: 1fr 1fr;
    padding: 15px 0 0 28px;
    align-items: center;
 }
 
 .top_header__input {
    position: relative;
-   margin-right: 20px;
 }
 
 .top_header__input svg {
@@ -99,7 +98,7 @@ ul {
 }
 
 .top_header__input input {
-   background-color: rgb(185, 185, 185);
+   background-color: rgb(209, 209, 209);
    border-radius: 20px;
    padding: 2px 6px;
    border: #fff;
@@ -130,13 +129,62 @@ ul {
 }
 
 
+.bottom_header {
+   display: grid;
+   grid-template: 1fr / 1fr 1fr;
+   margin-top: -20px;
+   height: 70px;
+}
 
+.bottom_header__left {
+   display: flex;
+   align-items: flex-start;
+   margin: 0 0 0 26px;
+   gap: 16px;
+}
+
+.bottom_header__left_image {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: #000;
+}
+
+.bottom_header__left_text {
+   margin-top: 6px;
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+}
+
+.bottom_header__left_title {
+   font-size: 0.8rem;
+}
+
+.bottom_header__left_subtitle {
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+.bottom_header__right {
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-end;
+   margin-right: 34px;
+   gap: 20px;
+}
+
+.buttons_manage {
+   color: #fff;
+   font-size: 0.7rem;
+   background-color: rgb(42, 154, 245);
+   padding: 10px 20px;
+   align-self: center;
+   border-radius: 20px;
+   margin-top: -15px;
+}
 
 .main {
    grid-area: main;
    background-color: yellow;
 }
-
-
-
-
