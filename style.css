@@ -188,3 +188,59 @@ ul {
    grid-area: main;
    background-color: yellow;
 }
+
+.main_container {
+   background-color: rgb(229, 229, 229);
+   padding: 20px;
+   box-shadow: inset 0px 2px 5px rgba(131, 131, 131, 0.74);
+}
+
+.main_grid_container {
+   display: grid;
+   grid-template-areas: 
+   "left1 left1 right1";
+   gap: 14px;
+}
+
+.main_grid_container_left {
+   grid-area: left1;
+}
+
+.main_grid_container_left_article {
+   display: grid;
+  
+   grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+
+   gap: 20px;
+}
+
+.main_grid_container_left_article .card {
+   border-left: 5px solid rgb(255, 179, 0);
+   border-radius: 8px;
+   background-color: #fff;
+   padding: 20px 14px;
+   box-shadow: 0px 0px 10px rgb(198, 198, 198);
+
+}
+
+.main_grid_container_left_article .card p {
+   color: rgb(128, 128, 128);
+}
+
+.main_grid_container_left_article .card .title {
+   color: #000;
+   font-size: 1.1rem;
+   font-weight: 600;
+   margin-bottom: 2px;
+}
+
+.main_grid_title {
+   font-size: 1.1rem;
+   font-weight: 600;
+   color: rgba(0, 0, 0, 0.629);
+   margin-bottom: 8px;
+}
+
+.main_grid_container_right {
+   grid-area: right1;
+}
