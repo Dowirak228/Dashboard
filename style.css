@@ -186,7 +186,6 @@ ul {
 
 .main {
    grid-area: main;
-   background-color: yellow;
 }
 
 .main_container {
@@ -198,8 +197,8 @@ ul {
 .main_grid_container {
    display: grid;
    grid-template-areas: 
-   "left1 left1 right1";
-   gap: 14px;
+   "left1 left1 left1 right1";
+   gap: 24px;
 }
 
 .main_grid_container_left {
@@ -225,11 +224,12 @@ ul {
 
 .main_grid_container_left_article .card p {
    color: rgb(128, 128, 128);
+   font-size: 1.1rem;
 }
 
 .main_grid_container_left_article .card .title {
    color: #000;
-   font-size: 1.1rem;
+   font-size: 1.4rem;
    font-weight: 600;
    margin-bottom: 2px;
 }
@@ -243,4 +243,43 @@ ul {
 
 .main_grid_container_right {
    grid-area: right1;
+}
+
+
+.main_grid_container_right {
+}
+.main_grid_container_right_top {
+}
+.main_grid_container_right_top_title {
+}
+.main_grid_title {
+}
+.main_grid_container_right_top_article {
+}
+
+.main_grid_container_right_top_article .card {
+   border-radius: 8px;
+   background-color: #fff;
+   padding: 20px 14px;
+   box-shadow: 0px 0px 10px rgb(198, 198, 198);
+   padding: 30px;
+}
+
+
+.card {
+}
+.card_title {
+   color: #000;
+   font-size: 1rem;
+   font-weight: 600;
+   margin-bottom: 2px;
+}
+.card_text {
+   color: rgba(0, 0, 0, 0.530);
+   font-size: 0.9rem;
+}
+.card_separator {
+   width: 90%;
+   margin: 18px 14px;
+   border: 0.5px solid rgba(171, 171, 171, 0.396);
 }
